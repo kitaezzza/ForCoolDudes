@@ -1,0 +1,48 @@
+﻿<Window x:Class="ForCoolDudes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForCoolDudes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel x:Name="stackPanel" Orientation="Vertical">
+            <Menu  
+              VerticalAlignment="Top"
+              Background="#eeeeee"
+              Foreground="#161515" 
+              FontFamily="Verdana"
+              FontSize="15px"
+              Padding="10px"
+              >
+                <MenuItem Header="File">
+                    <MenuItem x:Name="mi_open" 
+                          Header="Open a file" 
+                          Click="mi_open_Click" />
+                    <MenuItem
+                        x:Name="mi_save"
+                        Click="mi_save_Click"
+                        Header="Save a file"/>
+                </MenuItem>
+                <MenuItem Header="Others">
+                    <MenuItem x:Name="mi_about"
+                              Click="mi_about_Click"
+                              Header="About"/>
+                    <MenuItem x:Name="mi_bonus"
+                              Click="mi_bonus_Click"
+                              Header="???"/>
+                </MenuItem>
+            </Menu>
+
+            <TextBox x:Name="tb_content"
+                SpellCheck.IsEnabled="True"
+                Language="ru-ru"
+                TextWrapping="Wrap"
+ 
+                 ScrollViewer.CanContentScroll="True"
+                 ScrollViewer.VerticalScrollBarVisibility="Visible"
+                />
+        </StackPanel>
+    </Grid>
+</Window>
