@@ -1,0 +1,40 @@
+﻿<Window x:Class="ForCoolDudes.Windows.Exit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForCoolDudes.Windows"
+        mc:Ignorable="d"
+        Title="Exit" Height="450" Width="800">
+    <Grid>
+        <TextBlock 
+                FontSize="25px"
+                FontFamily="Verdana"
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center" 
+                Margin="0,0,0,150">
+                Do you want to exit?
+         </TextBlock>
+        <Canvas x:Name="cnv">
+            <Button x:Name="btn_exit_no"
+             Height="60px"
+             Width="120px"
+             Content="No" 
+             IsTabStop="False"
+             Canvas.Left="0"
+             Canvas.Top="0"
+             Click="btn_exit_no_Click"
+             FontFamily="Verdana"
+             Margin="546,217,134,157"/>
+            <Button x:Name="btn_exit_yes"
+             Height="60px"
+             Width="120px"
+             Content="Yes" 
+             Click="btn_exit_yes_Click"
+             MouseMove="btn_exit_yes_MouseMove"
+             FontFamily="Verdana"
+             Margin="135,217,545,157"/>
+        </Canvas>
+
+    </Grid>
+</Window>

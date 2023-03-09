@@ -77,5 +77,11 @@ namespace ForCoolDudes
             Windows.Bonus bonus = new Windows.Bonus();
             bonus.Show();
         }
+
+        private void mi_exit_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.Exit exit = new Windows.Exit();
+            exit.Show();
+        }
     }
 }

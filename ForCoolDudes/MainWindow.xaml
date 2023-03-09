@@ -24,6 +24,9 @@
                         x:Name="mi_save"
                         Click="mi_save_Click"
                         Header="Save a file"/>
+                    <MenuItem x:Name="mi_exit"
+                              Click="mi_exit_Click"
+                              Header="Exit"/>
                 </MenuItem>
                 <MenuItem Header="Others">
                     <MenuItem x:Name="mi_about"
@@ -32,6 +35,7 @@
                     <MenuItem x:Name="mi_bonus"
                               Click="mi_bonus_Click"
                               Header="???"/>
+                    
                 </MenuItem>
             </Menu>
 
